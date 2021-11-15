@@ -1,740 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
-  <link rel="stylesheet" href="a.css">
-  <link rel="stylesheet" href="a.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
+	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
+	<title>Local index - HTTrack Website Copier</title>
+  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<style type="text/css">
+	<!--
 
-  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-  <meta name="apple-mobile-web-app-title" content="CodePen">
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
 
-  <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
 
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
+#siteNavigation .current { background-color: #ccd; }
 
-  <title>3D Shooter Template</title>
-
-  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-4de243a40619a967c0bf13b95e1ac6f8de89d943b7fc8710de33f681fe287604.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&display=swap" rel="stylesheet" />
-
-  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-  <meta name="apple-mobile-web-app-title" content="CodePen">
-
-  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-
-  <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
-
-  <title>3D Shooter Template</title>
-  <script>
-    if (document.location.search.match(/type=embed/gi)) {
-      window.parent.postMessage("resize", "*");
-    }
-  </script>
-
-  <style>
-    {
-      font-size: 15px;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100%;
-    }
-
-    body {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .referer-warning {
-      background: black;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-      padding: 0.75em;
-      color: white;
-      text-align: center;
-      font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
-      line-height: 1.2;
-      font-size: 1rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .referer-warning h1 {
-      font-size: 1.2rem;
-      margin: 0;
-    }
-
-    .referer-warning a {
-      color: #56bcf9;
-    }
-
-    /* $linkColorOnBlack */
-  </style>
-</head>
-
-<body class="">
-
-  <div id="result-iframe-wrap" role="main">
-
-    <iframe id="result" srcdoc="
-<!DOCTYPE html>
-<html lang=&quot;en&quot; >
-
-<head>
-
-  <meta charset=&quot;UTF-8&quot;>
-  
-<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
-<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
-
-<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
-
-<link rel=&quot;mask-icon&quot; type=&quot;&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
 
 
-  <title>3D Shooter Template</title>
-  
-  
-  
-  
-<style>
-html, body {
-                width: 100%;
-                height: 100%;
-            }
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
 
-            body {
-                background-color: #ffffff;
-                margin: 0;
-                overflow: hidden;
-                font-family: arial;
-            }
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
 
-            #blocker {
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
 
-                position: absolute;
 
-                width: 100%;
-                height: 100%;
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
 
-                background-color: rgba(0,0,0,0.5);
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
 
-            }
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
 
-            #instructions {
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
 
-                width: 100%;
-                height: 100%;
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
 
-                display: -webkit-box;
-                display: -moz-box;
-                display: box;
 
-                -webkit-box-orient: horizontal;
-                -moz-box-orient: horizontal;
-                box-orient: horizontal;
-
-                -webkit-box-pack: center;
-                -moz-box-pack: center;
-                box-pack: center;
-
-                -webkit-box-align: center;
-                -moz-box-align: center;
-                box-align: center;
-
-                color: #ffffff;
-                text-align: center;
-
-                cursor: pointer;
-
-            }
+// -->
 </style>
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
-  }
-</script>
-
-
 </head>
 
-<body translate=&quot;no&quot; >
-  <div id=&quot;blocker&quot;>
-
-            <div id=&quot;instructions&quot;>
-                <span style=&quot;font-size:40px&quot;>Click to play</span>
-                <br />
-                (W,A,S,D = Move, SPACE = Jump, MOUSE = Look, CLICK = Shoot)
-            </div>
-
-        </div>
-    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js&quot;></script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.js'></script>
-<script src='https://threejs.org/examples/js/renderers/Projector.js'></script>
-      <script id=&quot;rendered-js&quot; >
-/**
- * @author mrdoob / http://mrdoob.com/
- * @author schteppe / https://github.com/schteppe
- */
-var PointerLockControls = function (camera, cannonBody) {
-
-  var eyeYPos = 2; // eyes are 2 meters above the ground
-  var velocityFactor = 0.2;
-  var jumpVelocity = 20;
-  var scope = this;
-
-  var pitchObject = new THREE.Object3D();
-  pitchObject.add(camera);
-
-  var yawObject = new THREE.Object3D();
-  yawObject.position.y = 2;
-  yawObject.add(pitchObject);
-
-  var quat = new THREE.Quaternion();
-
-  var moveForward = false;
-  var moveBackward = false;
-  var moveLeft = false;
-  var moveRight = false;
-
-  var canJump = false;
-
-  var contactNormal = new CANNON.Vec3(); // Normal in the contact, pointing *out* of whatever the player touched
-  var upAxis = new CANNON.Vec3(0, 1, 0);
-  cannonBody.addEventListener(&quot;collide&quot;, function (e) {
-    var contact = e.contact;
-
-    // contact.bi and contact.bj are the colliding bodies, and contact.ni is the collision normal.
-    // We do not yet know which one is which! Let's check.
-    if (contact.bi.id == cannonBody.id) // bi is the player body, flip the contact normal
-      contact.ni.negate(contactNormal);else
-
-    contactNormal.copy(contact.ni); // bi is something else. Keep the normal as it is
-
-    // If contactNormal.dot(upAxis) is between 0 and 1, we know that the contact normal is somewhat in the up direction.
-    if (contactNormal.dot(upAxis) > 0.5) // Use a &quot;good&quot; threshold value between 0 and 1 here!
-      canJump = true;
-  });
-
-  var velocity = cannonBody.velocity;
-
-  var PI_2 = Math.PI / 2;
-
-  var onMouseMove = function (event) {
-
-    if (scope.enabled === false) return;
-
-    var movementX = event.movementX || event.mozMovementX || event.webkitMovementX || 0;
-    var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
-
-    yawObject.rotation.y -= movementX * 0.002;
-    pitchObject.rotation.x -= movementY * 0.002;
-
-    pitchObject.rotation.x = Math.max(-PI_2, Math.min(PI_2, pitchObject.rotation.x));
-  };
-
-  var onKeyDown = function (event) {
-
-    switch (event.keyCode) {
-
-      case 38: // up
-      case 87: // w
-        moveForward = true;
-        break;
-
-      case 37: // left
-      case 65: // a
-        moveLeft = true;break;
-
-      case 40: // down
-      case 83: // s
-        moveBackward = true;
-        break;
-
-      case 39: // right
-      case 68: // d
-        moveRight = true;
-        break;
-
-      case 32: // space
-        if (canJump === true) {
-          velocity.y = jumpVelocity;
-        }
-        canJump = false;
-        break;}
-
-
-  };
-
-  var onKeyUp = function (event) {
-
-    switch (event.keyCode) {
-
-      case 38: // up
-      case 87: // w
-        moveForward = false;
-        break;
-
-      case 37: // left
-      case 65: // a
-        moveLeft = false;
-        break;
-
-      case 40: // down
-      case 83: // a
-        moveBackward = false;
-        break;
-
-      case 39: // right
-      case 68: // d
-        moveRight = false;
-        break;}
-
-
-
-  };
-
-  document.addEventListener('mousemove', onMouseMove, false);
-  document.addEventListener('keydown', onKeyDown, false);
-  document.addEventListener('keyup', onKeyUp, false);
-
-  this.enabled = false;
-
-  this.getObject = function () {
-    return yawObject;
-  };
-
-  this.getDirection = function (targetVec) {
-    targetVec.set(0, 0, -1);
-    quat.multiplyVector3(targetVec);
-  };
-
-  // Moves the camera to the Cannon.js object position and adds velocity to the object if the run key is down
-  var inputVelocity = new THREE.Vector3();
-  var euler = new THREE.Euler();
-  this.update = function (delta) {
-
-    if (scope.enabled === false) return;
-
-    delta *= 0.1;
-
-    inputVelocity.set(0, 0, 0);
-
-    if (moveForward) {
-      inputVelocity.z = -velocityFactor * delta;
-    }
-    if (moveBackward) {
-      inputVelocity.z = velocityFactor * delta;
-    }
-
-    if (moveLeft) {
-      inputVelocity.x = -velocityFactor * delta;
-    }
-    if (moveRight) {
-      inputVelocity.x = velocityFactor * delta;
-    }
-
-    // Convert velocity to world coordinates
-    euler.x = pitchObject.rotation.x;
-    euler.y = yawObject.rotation.y;
-    euler.order = &quot;XYZ&quot;;
-    quat.setFromEuler(euler);
-    inputVelocity.applyQuaternion(quat);
-    //quat.multiplyVector3(inputVelocity);
-
-    // Add to the object
-    velocity.x += inputVelocity.x;
-    velocity.z += inputVelocity.z;
-
-    yawObject.position.copy(cannonBody.position);
-  };
-};
-
-//########################
-// code start
-
-var sphereShape,sphereBody,world,physicsMaterial,walls = [],balls = [],ballMeshes = [],boxes = [],boxMeshes = [];
-
-var camera, scene, renderer;
-var geometry, material, mesh;
-var controls,time = Date.now();
-
-var blocker = document.getElementById('blocker');
-var instructions = document.getElementById('instructions');
-
-var havePointerLock = 'pointerLockElement' in document || 'mozPointerLockElement' in document || 'webkitPointerLockElement' in document;
-
-if (havePointerLock) {
-
-  var element = document.body;
-
-  var pointerlockchange = function (event) {
-
-    if (document.pointerLockElement === element || document.mozPointerLockElement === element || document.webkitPointerLockElement === element) {
-
-      controls.enabled = true;
-
-      blocker.style.display = 'none';
-
-    } else {
-
-      controls.enabled = false;
-
-      blocker.style.display = '-webkit-box';
-      blocker.style.display = '-moz-box';
-      blocker.style.display = 'box';
-
-      instructions.style.display = '';
-
-    }
-
-  };
-
-  var pointerlockerror = function (event) {
-    instructions.style.display = '';
-  };
-
-  // Hook pointer lock state change events
-  document.addEventListener('pointerlockchange', pointerlockchange, false);
-  document.addEventListener('mozpointerlockchange', pointerlockchange, false);
-  document.addEventListener('webkitpointerlockchange', pointerlockchange, false);
-
-  document.addEventListener('pointerlockerror', pointerlockerror, false);
-  document.addEventListener('mozpointerlockerror', pointerlockerror, false);
-  document.addEventListener('webkitpointerlockerror', pointerlockerror, false);
-
-  instructions.addEventListener('click', function (event) {
-    instructions.style.display = 'none';
-
-    // Ask the browser to lock the pointer
-    element.requestPointerLock = element.requestPointerLock || element.mozRequestPointerLock || element.webkitRequestPointerLock;
-
-    if (/Firefox/i.test(navigator.userAgent)) {
-
-      var fullscreenchange = function (event) {
-
-        if (document.fullscreenElement === element || document.mozFullscreenElement === element || document.mozFullScreenElement === element) {
-
-          document.removeEventListener('fullscreenchange', fullscreenchange);
-          document.removeEventListener('mozfullscreenchange', fullscreenchange);
-
-          element.requestPointerLock();
-        }
-
-      };
-
-      document.addEventListener('fullscreenchange', fullscreenchange, false);
-      document.addEventListener('mozfullscreenchange', fullscreenchange, false);
-
-      element.requestFullscreen = element.requestFullscreen || element.mozRequestFullscreen || element.mozRequestFullScreen || element.webkitRequestFullscreen;
-
-      element.requestFullscreen();
-
-    } else {
-
-      element.requestPointerLock();
-
-    }
-
-  }, false);
-
-} else {
-
-  instructions.innerHTML = 'Your browser doesn\'t seem to support Pointer Lock API';
-
-}
-
-initCannon();
-init();
-animate();
-
-function initCannon() {
-  // Setup our world
-  world = new CANNON.World();
-  world.quatNormalizeSkip = 0;
-  world.quatNormalizeFast = false;
-
-  var solver = new CANNON.GSSolver();
-
-  world.defaultContactMaterial.contactEquationStiffness = 1e9;
-  world.defaultContactMaterial.contactEquationRelaxation = 4;
-
-  solver.iterations = 7;
-  solver.tolerance = 0.1;
-  var split = true;
-  if (split)
-  world.solver = new CANNON.SplitSolver(solver);else
-
-  world.solver = solver;
-
-  world.gravity.set(0, -20, 0);
-  world.broadphase = new CANNON.NaiveBroadphase();
-
-  // Create a slippery material (friction coefficient = 0.0)
-  physicsMaterial = new CANNON.Material(&quot;slipperyMaterial&quot;);
-  var physicsContactMaterial = new CANNON.ContactMaterial(physicsMaterial,
-  physicsMaterial,
-  0.0, // friction coefficient
-  0.3 // restitution
-  );
-  // We must add the contact materials to the world
-  world.addContactMaterial(physicsContactMaterial);
-
-  // Create a sphere
-  var mass = 5,radius = 1.3;
-  sphereShape = new CANNON.Sphere(radius);
-  sphereBody = new CANNON.Body({ mass: mass });
-  sphereBody.addShape(sphereShape);
-  sphereBody.position.set(0, 5, 0);
-  sphereBody.linearDamping = 0.9;
-  world.add(sphereBody);
-
-  // Create a plane
-  var groundShape = new CANNON.Plane();
-  var groundBody = new CANNON.Body({ mass: 0 });
-  groundBody.addShape(groundShape);
-  groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2);
-  world.add(groundBody);
-}
-
-function init() {
-
-  camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-  scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x000000, 0, 500);
-
-  var ambient = new THREE.AmbientLight(0x111111);
-  scene.add(ambient);
-
-  light = new THREE.SpotLight(0xffffff);
-  light.position.set(10, 30, 20);
-  light.target.position.set(0, 0, 0);
-  if (true) {
-    light.castShadow = true;
-
-    light.shadow.camera.near = 20;
-    light.shadow.camera.far = 50; //camera.far;
-    light.shadow.camera.fov = 40;
-
-    light.shadowMapBias = 0.1;
-    light.shadowMapDarkness = 0.7;
-    light.shadow.mapSize.width = 2 * 512;
-    light.shadow.mapSize.height = 2 * 512;
-
-    //light.shadowCameraVisible = true;
-  }
-  scene.add(light);
-
-
-
-  controls = new PointerLockControls(camera, sphereBody);
-  scene.add(controls.getObject());
-
-  // floor
-  geometry = new THREE.PlaneGeometry(300, 300, 50, 50);
-  geometry.applyMatrix(new THREE.Matrix4().makeRotationX(-Math.PI / 2));
-
-  material = new THREE.MeshLambertMaterial({ color: 0xeeee00 });
-
-  mesh = new THREE.Mesh(geometry, material);
-  mesh.castShadow = true;
-  mesh.receiveShadow = true;
-  scene.add(mesh);
-
-  renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMapSoft = true;
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setClearColor(scene.fog.color, 1);
-
-  document.body.appendChild(renderer.domElement);
-
-  window.addEventListener('resize', onWindowResize, false);
-
-  // Add boxes
-  var halfExtents = new CANNON.Vec3(1, 1, 1);
-  var boxShape = new CANNON.Box(halfExtents);
-  var boxGeometry = new THREE.BoxGeometry(halfExtents.x * 2, halfExtents.y * 2, halfExtents.z * 2);
-  for (var i = 0; i < 7; i++) {
-    var x = (Math.random() - 0.5) * 20;
-    var y = 1 + (Math.random() - 0.5) * 1;
-    var z = (Math.random() - 0.5) * 20;
-    var boxBody = new CANNON.Body({ mass: 5 });
-    boxBody.addShape(boxShape);
-    var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
-    material2 = new THREE.MeshLambertMaterial({ color: randomColor });
-    var boxMesh = new THREE.Mesh(boxGeometry, material2);
-    world.add(boxBody);
-    scene.add(boxMesh);
-    boxBody.position.set(x, y, z);
-    boxMesh.position.set(x, y, z);
-    boxMesh.castShadow = true;
-    boxMesh.receiveShadow = true;
-    boxes.push(boxBody);
-    boxMeshes.push(boxMesh);
-  }
-
-
-  // Add linked boxes
-  var size = 0.5;
-  var he = new CANNON.Vec3(size, size, size * 0.1);
-  var boxShape = new CANNON.Box(he);
-  var mass = 0;
-  var space = 0.1 * size;
-  var N = 5,last;
-  var boxGeometry = new THREE.BoxGeometry(he.x * 2, he.y * 2, he.z * 2);
-  for (var i = 0; i < N; i++) {
-    var boxbody = new CANNON.Body({ mass: mass });
-    var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
-    material2 = new THREE.MeshBasicMaterial({ color: randomColor });
-    //console.log (randomColor);
-    boxbody.addShape(boxShape);
-    var boxMesh = new THREE.Mesh(boxGeometry, material2);
-    boxbody.position.set(5, (N - i) * (size * 2 + 2 * space) + size * 2 + space, 0);
-    boxbody.linearDamping = 0.01;
-    boxbody.angularDamping = 0.01;
-    // boxMesh.castShadow = true;
-    boxMesh.receiveShadow = true;
-    world.add(boxbody);
-    scene.add(boxMesh);
-    boxes.push(boxbody);
-    boxMeshes.push(boxMesh);
-
-    if (i != 0) {
-      // Connect this body to the last one
-      var c1 = new CANNON.PointToPointConstraint(boxbody, new CANNON.Vec3(-size, size + space, 0), last, new CANNON.Vec3(-size, -size - space, 0));
-      var c2 = new CANNON.PointToPointConstraint(boxbody, new CANNON.Vec3(size, size + space, 0), last, new CANNON.Vec3(size, -size - space, 0));
-      world.addConstraint(c1);
-      world.addConstraint(c2);
-    } else {
-      mass = 0.3;
-    }
-    last = boxbody;
-  }
-}
-
-function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-}
-
-var dt = 1 / 60;
-function animate() {
-  requestAnimationFrame(animate);
-  if (controls.enabled) {
-    world.step(dt);
-
-    // Update ball positions
-    for (var i = 0; i < balls.length; i++) {
-      ballMeshes[i].position.copy(balls[i].position);
-      ballMeshes[i].quaternion.copy(balls[i].quaternion);
-    }
-
-    // Update box positions
-    for (var i = 0; i < boxes.length; i++) {
-      boxMeshes[i].position.copy(boxes[i].position);
-      boxMeshes[i].quaternion.copy(boxes[i].quaternion);
-    }
-  }
-
-  controls.update(Date.now() - time);
-  renderer.render(scene, camera);
-  time = Date.now();
-
-}
-
-var ballShape = new CANNON.Sphere(0.2);
-var ballGeometry = new THREE.SphereGeometry(ballShape.radius, 32, 32);
-var shootDirection = new THREE.Vector3();
-var shootVelo = 35;
-var projector = new THREE.Projector();
-function getShootDir(targetVec) {
-  var vector = targetVec;
-  targetVec.set(0, 0, 1);
-  vector.unproject(camera);
-  var ray = new THREE.Ray(sphereBody.position, vector.sub(sphereBody.position).normalize());
-  targetVec.copy(ray.direction);
-}
-
-window.addEventListener(&quot;click&quot;, function (e) {
-  if (controls.enabled == true) {
-    var x = sphereBody.position.x;
-    var y = sphereBody.position.y;
-    var z = sphereBody.position.z;
-    var ballBody = new CANNON.Body({ mass: 1 });
-    ballBody.addShape(ballShape);
-    var randomColor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
-    material2 = new THREE.MeshPhongMaterial({ color: randomColor });
-    var ballMesh = new THREE.Mesh(ballGeometry, material2);
-    world.add(ballBody);
-    scene.add(ballMesh);
-    ballMesh.castShadow = true;
-    ballMesh.receiveShadow = true;
-    balls.push(ballBody);
-    ballMeshes.push(ballMesh);
-    getShootDir(shootDirection);
-    ballBody.velocity.set(shootDirection.x * shootVelo,
-    shootDirection.y * shootVelo,
-    shootDirection.z * shootVelo);
-
-    // Move the ball outside the player sphere
-    x += shootDirection.x * (sphereShape.radius * 1.02 + ballShape.radius);
-    y += shootDirection.y * (sphereShape.radius * 1.02 + ballShape.radius);
-    z += shootDirection.z * (sphereShape.radius * 1.02 + ballShape.radius);
-    ballBody.position.set(x, y, z);
-    ballMesh.position.set(x, y, z);
-  }
-});
-//# sourceURL=pen.js
-    </script>
-
-  
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
+
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="www.kodeclubs.com/index.html">
+						Kode Sports Club
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=www.kodeclubs.com/index.html">
+
+
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
 
 </body>
 
 </html>
- 
-" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
-    </iframe>
-
-  </div>
-  <h1>gurukul <br>coming soon <br>always keep checking here</h1>
-  
 
 
-
-  <h1>Virtual Keyboard w/ HTML, CSS & JS</h1>
-  <h3>Features</h3>
-  <ul>
-      <li>Easy to integrate</li>
-      <li>Responsive</li>
-      <li>Vanilla JS (<strong>no libraries required!</strong>)</li>
-  </ul>
-  <textarea class="use-keyboard-input" style="position: absolute; top: 130px; right: 30px; width: 300px;"></textarea>
-
-  <script src="a.js"></script>
-</body>
-
-</html>
