@@ -11222,7 +11222,7 @@ object-assign
           document
             .querySelector("#contactsbutton")
             .addEventListener("click", function () {
-              window.open("first.html");
+              open("") ;
             });
         }),
         u.a.useEffect(function () {
@@ -11230,7 +11230,7 @@ object-assign
             .querySelector("#githubbutton")
             .addEventListener("click", function () {
               href(
-                "first.html"
+                ""
               );
             });
         }),
